@@ -315,4 +315,74 @@ firebase_app#
 
 ここで再度ブラウザから localhost:3001 にアクセスして React Redux のテンプレート画面が表示されるか確認してみましょう
 
+## 停止方法
+
+### 開発サーバ
+
+npm start で起動した開発サーバは control + c で停止します
+
+
+```
+Compiled successfully!
+
+You can now view app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.31.0.2:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+^C
+firebase_app#
+```
+
+### docker container 上で起動した bash
+
+docker container exec で起動した bash などのターミナルは exit で抜けます (ホストOSに戻れるはずです)
+
+```
+firebase_app# exit
+exit
+$
+```
+
+### docker container
+
+docker-compose up で起動したコンテナは docker container stop コマンドで停止します
+
+```
+$ docker container ls
+CONTAINER ID   IMAGE               COMMAND                  CREATED       STATUS       PORTS                                       NAMES
+014db5f60eda   node:current-slim   "docker-entrypoint.s…"   5 hours ago   Up 5 hours   0.0.0.0:3001->3000/tcp, :::3001->3000/tcp   firebase_app
+$ docker container stop firebase_app
+firebase_app
+$
+```
+
+docker-compose up を実行したターミナルでは処理が停止しているはずですので、予期せぬエラーが発生していないか確認しておきましょう
+
+```
+$ pwd
+/Users/r2/firebase_app
+$ ls
+docker-compose.yml
+$ docker-compose up
+Pulling node (node:current-slim)...
+current-slim: Pulling from library/node
+07aded7c29c6: Pull complete
+92706508d124: Pull complete
+29e8836fa52b: Pull complete
+c69c406f761b: Pull complete
+1ad0d9e4f0be: Pull complete
+Digest: sha256:283d85e5a64183046abad478f5f98428720c1b30a72cc11d0cd1cedc1cb53493
+Status: Downloaded newer image for node:current-slim
+Recreating firebase_app ... done
+Attaching to firebase_app
+firebase_app | Welcome to Node.js v16.10.0.
+firebase_app | Type ".help" for more information.
+> firebase_app exited with code 137
+$
+```
+
 end of md, thank you for your attention
