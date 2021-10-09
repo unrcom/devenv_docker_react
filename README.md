@@ -311,6 +311,30 @@ Run `npm audit` for details.
 firebase_app#
 ```
 
+### firebase
+
+本プロジェクトではバックエンドに Forebase を使用するためインストールしておく
+
+```
+root@firebase_app:/usr/src/app# npm i firebase
+
+added 83 packages, and audited 2145 packages in 3m
+
+160 packages are looking for funding
+  run `npm fund` for details
+
+66 vulnerabilities (24 moderate, 40 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+root@firebase_app:/usr/src/app#
+```
+
 #### 動作確認
 
 ここで再度ブラウザから localhost:3001 にアクセスして React Redux のテンプレート画面が表示されるか確認してみましょう
