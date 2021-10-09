@@ -220,14 +220,99 @@ To create a production build, use npm run build.
 
 ブラウザから localhost:3001 にアクセスして React Redux のテンプレート画面が表示されれば OK (はじめてこの画面を見る方は、すべてのボタンを押して動作結果を確認しておきましょう)
 
-以下はプロジェクトに応じて必要なモジュールが異なりますので、インストールに
+以下はプロジェクトに応じて必要なモジュールが異なりますので、必要に応じてインストールすることになります
 
+### Material UI
 
+一番人気の UI コンポーネントライブラリです
 
+先日 Version　5 がリリースされましたが当面は Version　4　でやっていこうと思っていますので、以下は v4 のインストール手順になります (v4 と v5 は同一の React コンポーネントで共存できそうですので、機会があればトライしてみます)
 
-networks:
+```
+firebase_app# pwd
+/usr/src/app
+firebase_app# ls
+README.md  node_modules  package-lock.json  package.json  public  src  tsconfig.json
+firebase_app# npm i @material-ui/core @material-ui/icons @material-ui/lab
 
+added 26 packages, and audited 2046 packages in 4m
 
+158 packages are looking for funding
+  run `npm fund` for details
 
+66 vulnerabilities (24 moderate, 40 high, 2 critical)
 
+To address issues that do not require attention, run:
+  npm audit fix
 
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+firebase_app#
+```
+
+### axios
+
+Rest API とメッセージをやりとりする場合は、なんらかの HTTP クライアントを使用しますが axios を使った非同期通信を採用しタイト思います
+
+```
+firebase_app# pwd
+/usr/src/app
+firebase_app# ls
+README.md  node_modules  package-lock.json  package.json  public  src  tsconfig.json
+firebase_app# npm i axios
+
+added 1 package, and audited 2047 packages in 21s
+
+158 packages are looking for funding
+  run `npm fund` for details
+
+66 vulnerabilities (24 moderate, 40 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+firebase_app#
+```
+
+### react-router-dom
+
+本プロジェクトでは使用しませんが、URLパスを使用して Reactコンポーネントを制御するには react-router-dom が必要にある場合があります
+
+インストールは以下のようになります
+
+```
+firebase_app# pwd
+/usr/src/app
+firebase_app# ls
+README.md  node_modules  package-lock.json  package.json  public  src  tsconfig.json
+firebase_app#
+firebase_app# npm i react-router-dom @types/react-router-dom
+
+added 15 packages, and audited 2062 packages in 28s
+
+158 packages are looking for funding
+  run `npm fund` for details
+
+66 vulnerabilities (24 moderate, 40 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+firebase_app#
+```
+
+#### 動作確認
+
+ここで再度ブラウザから localhost:3001 にアクセスして React Redux のテンプレート画面が表示されるか確認してみましょう
+
+end of md, thank you for your attention
