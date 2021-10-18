@@ -10,13 +10,27 @@ React + Redux Toolkit + TypeScript　を用いた Webフロントエンドの開
 - 「名称未設定フォルダ」ができるのでこれを右クリックして「名前を変更」を選択し、フォルダ名を「firebase_app」に変更する
   - firebase_app　の記述は、プロジェクトごとに置き換えてください
 
+## プロジェクトフォルダにコマンドラインからアクセスする
+
+- iTerm2 を起動
+- 以下は操作例です
 
 ```
-$ cd
+Last login: Mon Oct 18 17:55:49 on ttys005
+r@ishi32s-MacBook-Air ~ % export PS1='$ '     //プロンプトは簡易な表示に変更します
+$ pwd                                         //現在いるフォルダを確認します
+/Users/r
+$ ls                                          //ファイルの一覧を表示します
+Applications			Documents			Music
+Applications (Parallels)	Downloads			Parallels
+Desktop				Library				Pictures
+Docker				Movies				Public
+$ cd Desktop                                  //デスクトップフォルダへ移動します
+$ ls
+$RECYCLE.BIN  desktop.ini.  firebase_app
+$ cd firebase_app                             //firebase_appフォルダへ移動します
 $ pwd
-/Users/r2
-$ mkdir firebase_app
-$ cd firebase_app
+/Users/r/Desktop/firebase_app
 $
 ```
 
