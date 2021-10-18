@@ -2,6 +2,16 @@
 
 React + Redux Toolkit + TypeScript　を用いた Webフロントエンドの開発環境を　Docker container 上に構築する手順です
 
+## Over view
+
+- プロジェクトフォルダを作成する
+- docker-compose.yml を配置する
+- ネットワークを確認する
+  - 必要なネットワークが存在しない場合は作成する
+- コンテナを起動する
+- コンテナに開発で必要になるモジュールをインストールする
+- コンテナを停止する
+
 ## プロジェクトフォルダを作成する
 
 プロジェクトフォルダをデスクトップ上に作成する手順を示します (プロジェクトフォルダの場所は任意です)
@@ -20,7 +30,7 @@ Last login: Mon Oct 18 17:55:49 on ttys005
 r@ishi32s-MacBook-Air ~ % export PS1='$ '     //プロンプトは簡易な表示に変更します
 $ pwd                                         //現在いるフォルダを確認します
 /Users/r
-$ ls                                          //ファイルの一覧を表示します
+$ ls                                          //ファイルとフォルダの一覧を表示します
 Applications			Documents			Music
 Applications (Parallels)	Downloads			Parallels
 Desktop				Library				Pictures
@@ -355,7 +365,7 @@ root@firebase_app:/usr/src/app#
 
 ここで再度ブラウザから localhost:3001 にアクセスして React Redux のテンプレート画面が表示されるか確認してみましょう
 
-## 停止方法
+## コンテナを停止する方法
 
 ### 開発サーバ
 
@@ -403,24 +413,7 @@ $
 docker-compose up を実行したターミナルでは処理が停止しているはずですので、予期せぬエラーが発生していないか確認しておきましょう
 
 ```
-$ pwd
-/Users/r2/firebase_app
-$ ls
-docker-compose.yml
-$ docker-compose up
-Pulling node (node:current-slim)...
-current-slim: Pulling from library/node
-07aded7c29c6: Pull complete
-92706508d124: Pull complete
-29e8836fa52b: Pull complete
-c69c406f761b: Pull complete
-1ad0d9e4f0be: Pull complete
-Digest: sha256:283d85e5a64183046abad478f5f98428720c1b30a72cc11d0cd1cedc1cb53493
-Status: Downloaded newer image for node:current-slim
-Recreating firebase_app ... done
-Attaching to firebase_app
-firebase_app | Welcome to Node.js v16.10.0.
-firebase_app | Type ".help" for more information.
+
 > firebase_app exited with code 137
 $
 ```
