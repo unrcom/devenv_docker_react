@@ -280,6 +280,11 @@ Run `npm audit` for details.
 firebase_app#
 ```
 
+#### Material UI v5 をインストールするには
+
+- npm install @mui/material @emotion/react @emotion/styled
+- npm install @mui/icons-material
+
 ### axios
 
 Rest API とメッセージをやりとりする場合は、なんらかの HTTP クライアントを使用しますが axios を使った非同期通信を採用しタイト思います
