@@ -368,6 +368,32 @@ Run `npm audit` for details.
 root@firebase_app:/usr/src/app#
 ```
 
+### react-markdown
+
+```
+unr_webpage# pwd
+/usr/src/app
+unr_webpage# ls
+ README.md   node_modules   package-lock.json   package.json   public   src  'src'$'\343\201\256\343\202\263\343\203\222\343\202\232\343\203\274'   tsconfig.json
+unr_webpage# npm install react-markdown
+
+added 74 packages, and audited 2127 packages in 16s
+
+219 packages are looking for funding
+  run `npm fund` for details
+
+66 vulnerabilities (24 moderate, 40 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+unr_webpage#
+```
+
 #### 動作確認
 
 ここで再度ブラウザから localhost:3001 にアクセスして React Redux のテンプレート画面が表示されるか確認してみましょう
