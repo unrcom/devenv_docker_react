@@ -394,6 +394,30 @@ Run `npm audit` for details.
 unr_webpage#
 ```
 
+### unr_webpage
+
+```
+unr_webpage# pwd
+/usr/src/app
+unr_webpage# npm install redux-persist
+
+added 1 package, and audited 2208 packages in 14s
+
+221 packages are looking for funding
+  run `npm fund` for details
+
+66 vulnerabilities (24 moderate, 40 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+unr_webpage#
+```
+
 #### 動作確認
 
 ここで再度ブラウザから localhost:3001 にアクセスして React Redux のテンプレート画面が表示されるか確認してみましょう
