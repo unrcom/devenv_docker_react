@@ -394,7 +394,7 @@ Run `npm audit` for details.
 unr_webpage#
 ```
 
-### unr_webpage
+### redux-persist
 
 ```
 unr_webpage# pwd
@@ -402,6 +402,28 @@ unr_webpage# pwd
 unr_webpage# npm install redux-persist
 
 added 1 package, and audited 2208 packages in 14s
+
+221 packages are looking for funding
+  run `npm fund` for details
+
+66 vulnerabilities (24 moderate, 40 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+unr_webpage#
+```
+
+### dayjs
+
+```
+unr_webpage# npm install dayjs --save
+
+added 1 package, and audited 2209 packages in 10s
 
 221 packages are looking for funding
   run `npm fund` for details
