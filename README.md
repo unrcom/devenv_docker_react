@@ -285,34 +285,6 @@ firebase_app#
 - npm install @mui/material @emotion/react @emotion/styled
 - npm install @mui/icons-material
 
-### axios
-
-Rest API とメッセージをやりとりする場合は、なんらかの HTTP クライアントを使用しますが axios を使った非同期通信を採用しタイト思います
-
-```
-firebase_app# pwd
-/usr/src/app
-firebase_app# ls
-README.md  node_modules  package-lock.json  package.json  public  src  tsconfig.json
-firebase_app# npm i axios
-
-added 1 package, and audited 2047 packages in 21s
-
-158 packages are looking for funding
-  run `npm fund` for details
-
-66 vulnerabilities (24 moderate, 40 high, 2 critical)
-
-To address issues that do not require attention, run:
-  npm audit fix
-
-To address all issues (including breaking changes), run:
-  npm audit fix --force
-
-Run `npm audit` for details.
-firebase_app#
-```
-
 ### react-router-dom
 
 本プロジェクトでは使用しませんが、URLパスを使用して Reactコンポーネントを制御するには react-router-dom が必要にある場合があります
@@ -438,6 +410,143 @@ To address all issues (including breaking changes), run:
 
 Run `npm audit` for details.
 unr_webpage#
+```
+
+### axios
+
+Rest API とメッセージをやりとりする場合は、なんらかの HTTP クライアントを使用しますが axios を使った非同期通信を採用します
+
+```
+firebase_app# pwd
+/usr/src/app
+firebase_app# ls
+README.md  node_modules  package-lock.json  package.json  public  src  tsconfig.json
+firebase_app# npm install axios@0.21.1
+
+added 1 package, and audited 1991 packages in 7s
+
+155 packages are looking for funding
+  run `npm fund` for details
+
+36 vulnerabilities (24 moderate, 10 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+firebase_app#
+```
+
+### chart.js
+
+- npm install chart.js@2.9.3
+
+### react-chartjs-2
+
+```
+# npm install react-chartjs-2@2.9.0 --force
+npm WARN using --force Recommended protections disabled.
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: react-chartjs-2@2.9.0
+npm WARN Found: react@17.0.2
+npm WARN node_modules/react
+npm WARN   peer react@"^16.8.0 || ^17.0.0" from @material-ui/core@4.12.3
+npm WARN   node_modules/@material-ui/core
+npm WARN     @material-ui/core@"^4.12.3" from the root project
+npm WARN   10 more (@material-ui/styles, @material-ui/system, ...)
+npm WARN
+npm WARN Could not resolve dependency:
+npm WARN peer react@"^0.14.0 || ^15.0.0 || ^16.0.0-beta || ^16.0.0" from react-chartjs-2@2.9.0
+npm WARN node_modules/react-chartjs-2
+npm WARN   react-chartjs-2@"2.9.0" from the root project
+npm WARN
+npm WARN Conflicting peer dependency: react@16.14.0
+npm WARN node_modules/react
+npm WARN   peer react@"^0.14.0 || ^15.0.0 || ^16.0.0-beta || ^16.0.0" from react-chartjs-2@2.9.0
+npm WARN   node_modules/react-chartjs-2
+npm WARN     react-chartjs-2@"2.9.0" from the root project
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: react-chartjs-2@2.9.0
+npm WARN Found: react-dom@17.0.2
+npm WARN node_modules/react-dom
+npm WARN   peer react-dom@"^16.8.0 || ^17.0.0" from @material-ui/core@4.12.3
+npm WARN   node_modules/@material-ui/core
+npm WARN     @material-ui/core@"^4.12.3" from the root project
+npm WARN   6 more (@material-ui/styles, @material-ui/system, ...)
+npm WARN
+npm WARN Could not resolve dependency:
+npm WARN peer react-dom@"^0.14.0 || ^15.0.0 || ^16.0.0-beta || ^16.0.0" from react-chartjs-2@2.9.0
+npm WARN node_modules/react-chartjs-2
+npm WARN   react-chartjs-2@"2.9.0" from the root project
+npm WARN
+npm WARN Conflicting peer dependency: react-dom@16.14.0
+npm WARN node_modules/react-dom
+npm WARN   peer react-dom@"^0.14.0 || ^15.0.0 || ^16.0.0-beta || ^16.0.0" from react-chartjs-2@2.9.0
+npm WARN   node_modules/react-chartjs-2
+npm WARN     react-chartjs-2@"2.9.0" from the root project
+
+added 1 package, and audited 2020 packages in 5s
+
+159 packages are looking for funding
+  run `npm fund` for details
+
+37 vulnerabilities (24 moderate, 11 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+#
+```
+
+### react-countup
+
+```
+# npm install react-countup
+
+added 2 packages, and audited 2022 packages in 5s
+
+159 packages are looking for funding
+  run `npm fund` for details
+
+37 vulnerabilities (24 moderate, 11 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+#
+```
+
+### react-icons
+
+```
+# npm install react-icons
+
+added 1 package, and audited 2216 packages in 7s
+
+221 packages are looking for funding
+  run `npm fund` for details
+
+37 vulnerabilities (24 moderate, 11 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+#
 ```
 
 #### 動作確認
